@@ -5,6 +5,7 @@ import (
 	"path/filepath"
 	"time"
 
+	"hienpham.dev/snippetbox/pkg/forms"
 	"hienpham.dev/snippetbox/pkg/models"
 )
 
@@ -12,6 +13,7 @@ type templateData struct {
 	Snippet     *models.Snippet
 	Snippets    []*models.Snippet
 	CurrentYear int
+	Form        *forms.Form
 }
 
 func humanDate(t time.Time) string {
